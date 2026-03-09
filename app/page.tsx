@@ -20,8 +20,9 @@ export default function Home() {
             <span>Status</span>
             <span>Available for select projects</span>
           </div>
-          <div className="col-span-4 md:col-span-2 bg-[#f4f4f5] p-4 flex justify-end items-start text-[11px] uppercase tracking-widest">
+          <div className="col-span-4 md:col-span-2 bg-[#f4f4f5] p-4 flex flex-col justify-between items-end text-[11px] uppercase tracking-widest text-right">
             <span className="text-zinc-400">Index &darr;</span>
+            <Link href="/notion" className="mt-4 hover:text-[#ef4444] transition-colors underline underline-offset-2">V6: Notion Theme &rarr;</Link>
           </div>
         </header>
 
