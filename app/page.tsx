@@ -1,8 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 
+import IntroWrapper from './components/IntroWrapper';
+
 export default function Home() {
   return (
+    <IntroWrapper>
     <div className="min-h-screen bg-[#f4f4f5] text-[#18181b] font-sans selection:bg-[#ef4444] selection:text-white">
       <div className="max-w-[1400px] mx-auto min-h-screen flex flex-col">
         
@@ -22,7 +25,6 @@ export default function Home() {
           </div>
           <div className="col-span-4 md:col-span-2 bg-[#f4f4f5] p-4 flex flex-col justify-between items-end text-[11px] uppercase tracking-widest text-right">
             <span className="text-zinc-400">Index &darr;</span>
-            <Link href="/notion" className="mt-4 hover:text-[#ef4444] transition-colors underline underline-offset-2">V6: Notion Theme &rarr;</Link>
           </div>
         </header>
 
@@ -106,5 +108,6 @@ export default function Home() {
         </main>
       </div>
     </div>
+    </IntroWrapper>
   );
 }
